@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="6.0" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd">
+    <servlet>
+        <servlet-name>ServletLabrador</servlet-name>
+        <servlet-class>Servleti.ServletLabrador</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet>
+        <servlet-name>ServletFrancuskiBuldog</servlet-name>
+        <servlet-class>Servleti.ServletFrancuskiBuldog</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletLabrador</servlet-name>
+        <url-pattern>/ServletLabrador</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletFrancuskiBuldog</servlet-name>
+        <url-pattern>/ServletFrancuskiBuldog</url-pattern>
+    </servlet-mapping>
+</web-app>
